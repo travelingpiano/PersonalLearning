@@ -1,18 +1,12 @@
+import Point from './point';
+
 let message = 'abc';
 // let endsWithC = message.endsWith('c');
 
-class Point {
-  x: number;
-  y: number;
 
-  draw() {
-    console.log('x is ' + this.x + ' and y is ' + this.y);
-  }
-
-  getDistance(another: Point) {
-
-  }
-}
 
 let point = new Point();
+// point.x = 1;
+// point.y = 2;
+point.x = 10;
 point.draw();

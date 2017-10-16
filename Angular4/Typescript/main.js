@@ -1,2 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var point_1 = require("./point");
 var message = 'abc';
-var endsWithC = message.endsWith('c');
+// let endsWithC = message.endsWith('c');
+var point = new point_1["default"]();
+// point.x = 1;
+// point.y = 2;
+point.x = 10;
+point.draw();
