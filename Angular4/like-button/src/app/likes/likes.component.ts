@@ -8,8 +8,8 @@ import { LikesService } from './likes.service';
 })
 export class LikesComponent implements OnInit {
 
-  likeStatus;
-  likesCount;
+  likeStatus: string;
+  likesCount: number;
 
   constructor(service: LikesService) {
     this.likeStatus = "Unliked";
@@ -17,13 +17,9 @@ export class LikesComponent implements OnInit {
   }
 
   likeChange(event){
-    if(this.likeStatus == "Unliked"){
-      this.likeStatus = "Liked";
-      this.likesCount += 1;
-    }else{
-      this.likeStatus = "Unliked";
-      this.likesCount -= 1;
-    }
+    this.likeStatus = (this.likeStatus == "Liked") ? "Unliked" : "Liked";
+
+    this.likesCount += (this.likeStatus == "Liked") ? 1 : -1;
   }
 
   ngOnInit() {
