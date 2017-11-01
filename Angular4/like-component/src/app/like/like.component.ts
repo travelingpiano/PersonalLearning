@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-like',
@@ -7,12 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LikeComponent implements OnInit {
 
-  likeStatus: boolean;
-  likeCount: number;
+  @Input() likeStatus: boolean;
+  @Input() likeCount: number;
 
   constructor() {
-    this.likeStatus = false;
-    this.likeCount = 0;
   }
 
   ngOnInit() {
