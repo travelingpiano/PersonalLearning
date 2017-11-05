@@ -1,0 +1,6 @@
+<h1 [class]="'heading'" (click)="onClick()">
+  {{ title }}
+  <span [class]="'glyphicon'" [ngClass]="{'glpyhicon-chevron-left': isSelected, 'glyphicon-chevron-down': !isSelected}">
+  </span>
+</h1>
+<h2 [class]="'content'" *ngIf="isSelected">{{ title }} Content</h2>

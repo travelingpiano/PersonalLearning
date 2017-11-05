@@ -1,0 +1,12 @@
+.heading{
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.content{
+  font-size: 20px;
+}
