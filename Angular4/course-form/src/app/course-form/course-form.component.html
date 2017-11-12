@@ -10,7 +10,7 @@
 	<select required ngModel name="courseCategory" id="courseCategory" #courseCategory="ngModel" (change)="changeCategory(courseCategory)">
 		<option></option>
 		<option *ngFor="let category of courseCategorys" [value]="category.id">
-			{{ category.name }}
+			{{ category.name}}
 		</option>
 	</select>
 	<div class="alert alert-danger" *ngIf="courseCategory.touched && courseCategory.errors && courseCategory.errors.required">Course category is required</div>
